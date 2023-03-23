@@ -1,6 +1,6 @@
 import logging
-import soma_binario
-from soma_binario import *
+#import soma_binario
+#from soma_binario import *
 
 logging.debug("debugando")
 
@@ -15,12 +15,12 @@ numero_binario2_list = list(numero_binario2)
 
 def traducao_bin_to_dec() :
     
-    global sum
-    global sum2
-    #o sum =0 foi declarado no inicio da função pq senão ele dava erro de execução
-    #UnboundLocalError: local variable 'sum2' referenced before assignment
-    sum = 0
-    sum2 = 0
+    global num1
+    global num2
+    #o num1 =0 foi declarado no inicio da função pq senão ele dava erro de execução
+    #UnboundLocalError: local variable 'num2' referenced before assignment
+    num1 = 0
+    num2 = 0
 
     #numero 1 :
     print("numero separado em array " + str(numero_binario1_list))
@@ -36,13 +36,13 @@ def traducao_bin_to_dec() :
     for m in range(len(numero_binario1_inverso)):
     # while m <= len(numero_binario1_inverso) :
         multiplic = int(numero_binario1_inverso[m]) * (2**m)
-        sum += 0
-        sum = sum + multiplic
+        num1 += 0
+        num1 = num1 + multiplic
         #transformacao =+ multiplic
         
         
 
-    print("o primeiro numero decimal : "+ str(sum))
+    print("o primeiro numero decimal : "+ str(num1))
 
     #numero 2 :
     print("numero separado em array " + str(numero_binario2_list))
@@ -56,18 +56,13 @@ def traducao_bin_to_dec() :
         
     for m in range(len(numero_binario2_inverso)):
         multiplic2 = int(numero_binario2_inverso[m]) * (2**m)
-        sum2+=0
-        sum2 = sum2+multiplic2
+        num2+=0
+        num2 = num2+multiplic2
         #transformacao =+ multiplic2
         
 
-    print("o segundo numero decimal : "+ str(sum2))
+    print("o segundo numero decimal : "+ str(num2))
     
 traducao_bin_to_dec()
 
-def traducao_dec_to_bin():
-    SumDecimal = soma_binario.SumDecimal
-    while(SumDecimal%2 != 1):
-        SumDecimal%2
-        destranf += 0
-        destranf =
+
