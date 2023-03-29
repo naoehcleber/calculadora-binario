@@ -65,4 +65,36 @@ def traducao_bin_to_dec() :
     
 traducao_bin_to_dec()
 
+#traducao de decimal pra binario
+
+def traducao_dec_to_bin(x):
+    #o x é o resultado da soma dos decimais
+    #criar um vetor vazio 
+    binario_destransf = []
+     
+    #dividir o x recursivamente
+    while (x>0):
+        #criar um contador
+        i = x%2
+        x = x//2
+        #o resto de cada divisão vai ser cada um dos numeros
+        binario_destransf.append(i)
+
+    #escrever os restos das divisões ao contrário
+    print(binario_destransf[::-1])
+
+   
+
+     
+    
+    
+    
+
+
+
+
+
+
+
+
 

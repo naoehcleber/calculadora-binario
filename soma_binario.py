@@ -13,35 +13,14 @@ traducao_bin_to_dec()
 
 SumDecimal = int(num1)+int(num2)
 print("A soma dos numeros binarios em decimal é : "+str(SumDecimal))
+x = SumDecimal
 
 
-def traducao_dec_to_bin(SumDecimal):
-    
-     
-    # array to store
-    # binary number
-    binaryNum = [0] * SumDecimal
- 
-    # counter for binary array
-    i = 0
-    while (SumDecimal > 0):
- 
-        # storing remainder
-        # in binary array
-        binaryNum[i] = SumDecimal % 2
-        SumDecimal = int(SumDecimal / 2)
-        i += 1
- 
-    # printing binary array
-    # in reverse order
-    
-    
-    
-    print(f'O numero decimal {SumDecimal} em binário é : {str(binaryNum[::-1])}')
+
     
  
 # Driver Code
-traducao_dec_to_bin(SumDecimal)
+traducao_dec_to_bin(x)
 
 #de decimal de volta pra binario :
 #resultado_em_binario() :
