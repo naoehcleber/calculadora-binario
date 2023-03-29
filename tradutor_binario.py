@@ -71,17 +71,45 @@ def traducao_dec_to_bin(x):
     #o x é o resultado da soma dos decimais
     #criar um vetor vazio 
     binario_destransf = []
-     
-    #dividir o x recursivamente
-    while (x>0):
-        #criar um contador
-        i = x%2
-        x = x//2
-        #o resto de cada divisão vai ser cada um dos numeros
-        binario_destransf.append(i)
-
-    #escrever os restos das divisões ao contrário
-    print(binario_destransf[::-1])
+    if x==0 :
+        #se o x(decimal) for 0 o binário vai ser 0 
+        binario_destransf.append(0)
+    else :
+        if x<0 :
+            x = x*(-1)
+            #dividir o x recursivamente
+            while (x>0):
+            
+                
+                #criar um contador
+                i = x%2
+                x = x//2
+                #o resto de cada divisão vai ser cada um dos numeros
+                binario_destransf.append(i)
+            x = x*(-1)
+            while(x<0) :
+               binario_destransf_string = "".join(binario_destransf.reverse)
+               binario_destransf = (~binario_destransf_string)
+            #escrever os array ao contrario
+            print("O número decimal em binário é " + str(binario_destransf))
+        if x>0 :
+            #dividir o x recursivamente
+            while (x>0):
+            
+                #criar um contador
+                i = x%2
+                x = x//2
+                #o resto de cada divisão vai ser cada um dos numeros
+                binario_destransf.append(i)
+            #escrever os array ao contrario
+            print("O número decimal em binário é " + str(binario_destransf[::-1]))
+        
+        
+        
+        
+    
+    
+    
 
    
 
